@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* 首屏背景 */
+.hero {
+  height: 100vh;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* 中央文字 */
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.center-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 5vw;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.center-text p {
+  margin-top: 14px;
+  font-size: 1.2vw;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+}
+
+/* 菜单按钮 */
+.menu-btn {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1001;
+  color: white;
+}
+
+/* 全屏菜单 */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.92);
+  display: none;
+  z-index: 1000;
+}
+
+/* 菜单内容 */
+.menu-items {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-items a {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  text-decoration: none;
+  color: black;
+  margin: 20px 0;
+}
+
+.menu-items a:hover {
+  opacity: 0.6;
+}
